@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <title>Portfolio</title>
+    <!--Styles de BOOTSTRAP-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://kit.fontawesome.com/6119e1c3e1.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="barra-nav">
+        <!--LOGO-->
+        <div class="logo">
+          <img
+            id="header-img"
+            src="https://cdn.glitch.com/3e84fc4d-825f-4eb0-9671-6ff5bdf37b6e%2Fpeque%C3%B1o_logo_portfolio.png?v=1625576301028"
+            alt="Logo mio"
+          />
+        </div>
+        <!--esto sería la NAVEGACION -->
+        <nav id="navbar">
+          <ul class="nav">
+            <li>
+              <a class="nav-link" href="#presentation">About</a>
+              <!--me devuelve a la página principal poniendo la /-->
+            </li>
+            <li>
+              <a class="nav-link" href="#projects">Work</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#menu">Contact</a>
+              <!--esto se lo llama LINKS RELATIVO: porq sin importar en q dominio estén son relativos al documento actual y siempre van a funcionar, los otros son ABSOLUTOS: cuando se coloca toda la direccion de la pág web si esta se mueve tendríamos q cambiar todo el link por completo-->
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--TITULO INICIO PAG-->
+    <!--div: se usa para agrupar elementos, d-flex sirve p q en bootstrap haga un flex de los bloques, justify p q centre los contenidos en el eje x, align en el eje y y flex-column p q se pongan uno abajo del otro-->
+    <section id="welcome-section">
+      <div class="container">
+        <div class="box">
+          <div class="title">
+            <div class="block"></div>
+            <h1>
+              <span>A</span>na <span>L</span>ucía <span>M</span>arzocca<span
+                >.</span
+              >
+            </h1>
+
+            <div class="role">
+              <div class="block"></div>
+              <p>FrontEnd Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--PRESENTACION DE MI PERSONA-->
+    <section id="presentation">
+       <h2>About me</h2>
+      <div id="resumen">
+        <p>
+          Hello! thanks for your interest in me, I am an enthusiastic and
+          self-taught person, I like to learn new things every day, especially
+          related to technology. I am an Industrial Engineer and I started a Computer Science degree. As I already mentioned, I am
+          self-taught and on my own I also began to study and learn the
+          different tools to be Web developed. As for my life outside of work =)
+          I love reading, doing functional training and going for a walk with my
+          dog. You can browse my website to find the different projects I have
+          done...I hope you enjoy them as I enjoy doing them.
+        </p>
+        <div class="col-10 col-sm-4 col-lg-5 mb-3">
+            <!--col-lg: pantallas muy grandes solo q ocupe 5-->
+            <img
+              src="https://cdn.glitch.com/3e84fc4d-825f-4eb0-9671-6ff5bdf37b6e%2Frsz_20200313_114318.jpg?v=1625676785999"
+              alt="my picture in Marsella, Francia"/>
+          </div>
+      </div>
+      <div
+        title="foto-mia"
+        class="cover cover-small"
+        style="background-image:url(https://cdn.glitch.com/3e84fc4d-825f-4eb0-9671-6ff5bdf37b6e%2Frsz_20200313_114318.jpg?v=1625676785999)"
+      ></div>
+    </section>
+
+    <!--   PROYECTOS REALIZADOS   -->
+    <!--presentacion proyectos-titulo-->
+    <section id="projects" class="projects-section">
+      <div class="title-project">
+        <h2 class="projects-section-header">Some of my projects</h2>
+      </div>
+      <!--proyectos-->
+      <div class="projects-grid">
+        
+        <a
+          href="https://codepen.io/ana-luc-a-marzocca/pen/LYyPgWP"
+          target="_blank"
+          class="project project-tile"
+          ><img
+            class="project-image"
+            src="https://cdn.glitch.com/3e84fc4d-825f-4eb0-9671-6ff5bdf37b6e%2FMi-gui-eco-work1.jpg?v=1626289007731"
+          alt="project"/>
+          <p class="project-title">Web page: Mi guia Eco.
+          </p></a>
+     
+        <a
+          href="https://codepen.io/ana-luc-a-marzocca/pen/vYyKKXr"
+          target="_blank"
+          class="project project-tile"
+          ><img
+            class="project-image"
+            src="https://cdn.glitch.com/3e84fc4d-825f-4eb0-9671-6ff5bdf37b6e%2Flanding-page-work2.jpg?v=1626289016023"
+          alt="project"/>
+          <p class="project-title">Landing page: mi guia eco.</p></a>
+      
+        <a
+          href="https://codepen.io/ana-luc-a-marzocca/pen/MWmgRBv"
+          target="_blank"
+          class="project project-tile"
+          ><img
+            class="project-image"
+            src="https://cdn.glitch.com/3e84fc4d-825f-4eb0-9671-6ff5bdf37b6e%2Fcards-about-cars-work3.jpg?v=1626289015283"
+          alt="project"/>
+          <p class="project-title">Cards about Cars</p></a>
+   
+        <a
+          href="https://codepen.io/ana-luc-a-marzocca/pen/JjEwbKN"
+          target="_blank"
+          class="project project-tile"
+          ><img
+            class="project-image"
+            src="https://cdn.glitch.com/3e84fc4d-825f-4eb0-9671-6ff5bdf37b6e%2Fpag-web-tributo-work4.jpg?v=1626289007667"
+          alt="project"/>
+          <p class="project-title">Tribute web page: Ada Lovelace.</p></a>
+      
+        <a
+          href="https://codepen.io/ana-luc-a-marzocca/pen/wvJEjLd"
+          target="_blank"
+          class="project project-tile"
+          ><img
+            class="project-image"
+            src="https://cdn.glitch.com/3e84fc4d-825f-4eb0-9671-6ff5bdf37b6e%2FForm-page-work5.jpg?v=1626289016422"
+          alt="project"/>
+          <p class="project-title">Form web page</p></a>
+       </div>
+      <a ref="https://codepen.io/ana-luc-a-marzocca" class="btn btn-show-all" target="_blank">More...<i class="fas fa-chevron-right"></i></a>
+        </section>
+    
+    <!--CONTACTO-->
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2>
+          Let´s work together...
+        </h2>
+        <p>
+          Wich drink do you want?
+        </p>
+      </div>
+      <div class="contact-links">
+        <a id="profile-link" href="https://github.com/AnaLuMarzo" target="_blank" class="btn contact-details"><i class="fab fa-github"></i>GitHub</a>
+        <a href="https://www.instagram.com/analumarzo/" target="_blank" class="btn contact-details"><i class="fab fa-instagram-square"></i>Instagram</a>
+        <a href="mailto:almarzocca@gmail.com" target="_blank" class="btn contact-details"><i class="fas fa-at"></i>Send me an email..</a>
+        <a href="mailto:almarzocca@gmail.com" target="_blank" class="btn contact-details"><i class="fab fa-whatsapp-square"></i>Whatsapp</a>
+      </div>
+    </section>
+  </body>
+</html>
